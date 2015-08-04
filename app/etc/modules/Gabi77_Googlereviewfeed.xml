@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- 
+/**
+ * @category   Gabi77
+ * @package    Gabi77_Googlereviewfeed
+ * @copyright  Copyright (c) 2015 gabi77 (http://www.gabi77.com)
+ * @author     Gabriel Janez <contact@gabi77.com>
+ * @license    http://opensource.org/licenses/osl-3.0.php  Open Software License (OSL 3.0)
+ */
+ -->
+<config>
+    <modules>
+        <Gabi77_Googlereviewfeed>
+            <active>true</active>
+            <codePool>community</codePool>
+        </Gabi77_Googlereviewfeed>
+    </modules>
+</config>

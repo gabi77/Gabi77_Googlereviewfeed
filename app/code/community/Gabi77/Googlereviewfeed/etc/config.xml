@@ -1,0 +1,82 @@
+<?xml version="1.0"?>
+<!-- 
+/** 
+ * @category Gabi77 
+ * @package Gabi77_Googlereviewfeed 
+ * @copyright Copyright (c) 2015 gabi77 (http://www.gabi77.com) 
+ * @author Gabriel Janez <contact@gabi77.com> 
+ * @license http://opensource.org/licenses/osl-3.0.php Open Software License (OSL 3.0) 
+ * 
+*/ 
+-->
+<config>
+	<modules>
+		<Gabi77_Googlereviewfeed>
+			<version>1.0.0</version>
+		</Gabi77_Googlereviewfeed>
+	</modules>
+	<global>
+		<models>
+			<googlereviewfeed>
+				<class>Gabi77_Googlereviewfeed_Model</class>
+			</googlereviewfeed>
+		</models>
+		<helpers>
+			<googlereviewfeed>
+				<class>Gabi77_Googlereviewfeed_Helper</class>
+			</googlereviewfeed>
+		</helpers>
+	</global>
+	<adminhtml>
+		<acl>
+			<resources>
+				<admin>
+					<children>
+						<system>
+							<children>
+								<config>
+									<children>
+										<googlereviewfeed translate="title"
+											module="googlereviewfeed">
+											<title>Google Review Feed</title>
+										</googlereviewfeed>
+									</children>
+								</config>
+							</children>
+						</system>
+					</children>
+				</admin>
+			</resources>
+		</acl>
+		<translate>
+			<modules>
+				<Gabi77_Googlereviewfeed>
+					<files>
+						<default>Gabi77_Googlereviewfeed.csv</default>
+					</files>
+				</Gabi77_Googlereviewfeed>
+			</modules>
+		</translate>
+	</adminhtml>
+	<frontend>
+        <routers>
+            <googlereviewfeed>
+                <use>standard</use>
+                <args>
+                    <module>Gabi77_Googlereviewfeed</module>
+                    <frontName>googlereviewfeed</frontName>
+                </args>
+            </googlereviewfeed>
+        </routers>
+	</frontend>
+	<default>
+		<googlereviewfeed>
+			<general_settings>
+				<general_enabled>0</general_enabled>
+				<aggregator>Magento Eccommerce Website</aggregator>
+				<publisher>Gabi77</publisher>
+				<favicon>http://www.gabi77.com</favicon>
+			</general_settings>
+		</googlereviewfeed>
+	</default>
+</config>
