@@ -10,8 +10,8 @@
 class Gabi77_Googlereviewfeed_IndexController extends Mage_Core_Controller_Front_Action {
 	
 	 public function indexAction() {
-        set_time_limit(0);
-        ini_set('memory_limit', '1G'); 
+                // set_time_limit(0);
+                // ini_set('memory_limit', '512M'); 
 		//$this->loadLayout (); // Va chercher les elements à afficher
 		//$this->renderLayout (); // Affiche les elements
 		
