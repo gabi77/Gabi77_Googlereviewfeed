@@ -8,20 +8,17 @@
  */
 class Gabi77_Googlereviewfeed_Model_Review
 {
- 
-
-
   public function __construct() {
-  	$this->param = Mage::helper('googlereviewfeed')->parameterReviewfeed();
+          $this->param = Mage::helper('googlereviewfeed')->parameterReviewfeed();
   }
 	
   public function getReviews() {
   
 	  $reviews = Mage::getModel('review/review')->getCollection()
-	  ->addStoreFilter(Mage::app()->getStore()->getId())
-	  ->addStatusFilter(Mage_Review_Model_Review::STATUS_APPROVED)
-	  ->setDateOrder('desc')
-	  ->addRateVotes();
+	                   ->addStoreFilter(Mage::app()->getStore()->getId())
+	                   ->addStatusFilter(Mage_Review_Model_Review::STATUS_APPROVED)
+	                   ->setDateOrder('desc')
+	                   ->addRateVotes();
 	  
 	  return $reviews;
   }
@@ -57,7 +54,8 @@ class Gabi77_Googlereviewfeed_Model_Review
   
 
   /**
-   * 
+   * All list reviews
+   *
    * @return string
    *
    **/
