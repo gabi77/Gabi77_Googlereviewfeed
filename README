@@ -1,0 +1,15 @@
+# Google View Feed
+
+Google View Feed xml for Magento 1.x
+
+It is a extension for Magento 1.x that create a xml feed for google reviews
+
+##How to Install ?
+
+1 - Download the extension, and copy to app magento folder
+2 - Flush magento Cache
+3 - Logout and Login
+4 - Configure GoogleViewFeed plugin at System >> Configuration >> GABI77 >> Google Review Feed
+5 - Access the feed at http://www.yourdomain.com/googlereviewfeed
+
+Tested on Magento 1.4.1.0, 1.6.2.0 and 1.9.1.0
